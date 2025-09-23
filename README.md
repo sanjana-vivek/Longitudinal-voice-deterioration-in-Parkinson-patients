@@ -351,9 +351,7 @@ flake8 voice_pipeline/
 ## References and Citations
 
 Key publications supporting this methodology:
-
-1. Tsanas, A., et al. (2012). "Accurate telemonitoring of Parkinson's disease symptom severity using nonlinear speech signal processing and statistical machine learning." *IEEE Transactions on Biomedical Engineering*
-2. Rusz, J., et al. (2015). "Quantitative acoustic measurements for characterization of speech and voice disorders in early untreated Parkinson's disease." *Journal of the Acoustical Society of America*
+To be updated soon
 
 **Citation Format:**
 ```bibtex
