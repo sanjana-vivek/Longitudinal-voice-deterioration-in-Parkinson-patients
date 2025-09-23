@@ -354,14 +354,7 @@ Key publications supporting this methodology:
 To be updated soon
 
 **Citation Format:**
-```bibtex
-@software{voice_biomarker_pipeline,
-  title={Voice Biomarker Analysis Pipeline},
-  author={[Author Names]},
-  year={2024},
-  url={https://github.com/your-org/voice-biomarker-pipeline}
-}
-```
+To be updated soon
 
 ## Support and Documentation
 
