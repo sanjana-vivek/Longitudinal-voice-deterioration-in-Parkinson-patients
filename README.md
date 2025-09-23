@@ -19,23 +19,59 @@ This pipeline processes audio recordings to identify subtle changes in voice cha
 
 ## Feature Extraction Architecture
 
-The pipeline extracts features across six complementary domains:
+| Feature Category | Description | Clinical Relevance |
+|------------------|-------------|-------------------|
+| **Multi-Domain Analysis** | Extracts 277+ voice features across 6 domains | Comprehensive voice characterization |
+| **Longitudinal Tracking** | Session-by-session trend analysis | Disease progression monitoring |
+| **Baseline Normalization** | Patient-specific reference establishment | Personalized health baselines |
+| **Real-time Detection** | CUSUM statistical process control | Early deterioration warning system |
+| **Automated Reporting** | Visual summaries and statistical insights | Clinical decision support |
 
-### Core Acoustic Features
-- **Sound Pressure Level Statistics**: Mean, peak, and variability measures
-- **Spectral Characteristics**: Frequency content and distribution analysis
-- **Temporal Dynamics**: Frame-level variation patterns
+## Feature Extraction Domains
 
-### Traditional Voice Metrics
-- **Jitter and Shimmer**: Fundamental frequency and amplitude perturbations
-- **Harmonics-to-Noise Ratio**: Voice quality and clarity measures
-- **Formant Analysis**: Vocal tract resonance characteristics
+### Acoustic Features
+| Feature Type | Parameters | Clinical Application |
+|--------------|------------|---------------------|
+| **Sound Pressure Level (SPL)** | Mean, Peak, Standard Deviation | Voice intensity and control assessment |
+| **Spectral Statistics** | Centroid, Bandwidth, Rolloff | Frequency content analysis |
+| **Temporal Dynamics** | Frame-level variations | Voice stability measurement |
 
-### Advanced Analysis Domains
-- **Nonlinear Dynamics**: RPDE, DFA, correlation dimension for complexity analysis
-- **Wavelet Transform**: Multi-scale time-frequency decomposition
-- **Scattering Transform**: Translation-invariant signal representations
-- **Deep Learning Embeddings**: wav2vec2-derived statistical features
+### Classical Voice Metrics
+| Feature | Description | Pathology Indicator |
+|---------|-------------|-------------------|
+| **Jitter** | Fundamental frequency variation | Vocal fold irregularity |
+| **Shimmer** | Amplitude perturbation | Voice quality degradation |
+| **Harmonics-to-Noise Ratio** | Signal clarity measure | Breathiness and roughness |
+
+### Advanced Analysis
+| Domain | Features | Research Applications |
+|--------|----------|---------------------|
+| **Nonlinear Dynamics** | RPDE, DFA, Correlation Dimension | Neurological voice changes |
+| **Wavelet Transform** | Multi-scale energy decomposition | Time-frequency analysis |
+| **Scattering Transform** | Invariant representations | Robust feature extraction |
+| **Deep Embeddings** | wav2vec2 statistics | Modern representation learning |
+
+
+## Technical Specifications
+
+### System Requirements
+| Component | Specification | Purpose |
+|-----------|---------------|---------|
+| **Python Version** | 3.7+ | Core runtime |
+| **Memory** | 4GB+ RAM recommended | Large feature matrices |
+| **Storage** | Variable (depends on dataset) | Audio file storage |
+| **Processing** | Multi-core CPU beneficial | Parallel feature extraction |
+
+### Dependencies
+| Library | Version | Purpose |
+|---------|---------|---------|
+| `numpy` | Latest | Numerical computations |
+| `pandas` | Latest | Data manipulation |
+| `scikit-learn` | Latest | Machine learning algorithms |
+| `matplotlib` | Latest | Data visualization |
+| `librosa` | Latest | Audio signal processing |
+| `transformers` | Latest (optional) | Deep learning embeddings |
+
 
 ## Core Functions
 
