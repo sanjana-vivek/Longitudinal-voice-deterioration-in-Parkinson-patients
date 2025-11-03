@@ -73,6 +73,11 @@ This pipeline processes audio recordings to identify subtle changes in voice cha
 | `transformers` | Latest (optional) | Deep learning embeddings |
 
 
+## Methodology
+
+![methodology diagram](https://github.com/user-attachments/assets/915469f9-b07e-420f-9b95-24276c493951)
+
+
 ## Core Functions
 
 ### Feature Extraction Pipeline
